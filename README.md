@@ -57,6 +57,7 @@ Run the following SQL commands:
 
 **sql**
 CREATE DATABASE blog_app;
+
 USE blog_app;
 
 CREATE TABLE users (
@@ -65,6 +66,7 @@ CREATE TABLE users (
   password VARCHAR(255) NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
 
 CREATE TABLE blogs (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -80,6 +82,7 @@ CREATE TABLE blogs (
   time BIGINT
 );
 
+
 CREATE TABLE comments (
   id INT AUTO_INCREMENT PRIMARY KEY,
   blogId INT,
@@ -88,6 +91,7 @@ CREATE TABLE comments (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (blogId) REFERENCES blogs(id) ON DELETE CASCADE
 );
+
 
 CREATE TABLE wishlist (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -102,6 +106,7 @@ CREATE TABLE wishlist (
 ### 3️⃣ Environment Variables
 
 Create a `.env` file in your server folder:
+
 
 --.env--
 PORT=5000
@@ -145,10 +150,15 @@ bookstore-management/
 ## 📊 Database Queries (Testing)
 
 **sql**
+
 SELECT * FROM blogs;
+
 SELECT * FROM users;
+
 SELECT * FROM comments;
+
 SELECT * FROM wishlist;
+
 
 ---
 
