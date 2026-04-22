@@ -45,7 +45,8 @@ A full-stack **Bookstore Management System** that allows users to create, manage
 ### 1️⃣ Clone the Repository
 
 bash
-git clone https://github.com/your-username/bookstore-management.git
+git clone https://github.com/Fahim183/bookstore-management.git
+
 cd bookstore-management
 
 
@@ -56,6 +57,7 @@ cd bookstore-management
 Run the following SQL commands:
 
 **sql**
+
 CREATE DATABASE blog_app;
 
 USE blog_app;
@@ -109,10 +111,15 @@ Create a `.env` file in your server folder:
 
 
 --.env--
+
 PORT=5000
+
 DB_HOST=localhost
+
 DB_USER=root
+
 DB_PASS=@sqlfahim_12345
+
 DB_NAME=blog_app
 
 ⚠️ Never share your real password publicly.
@@ -124,6 +131,7 @@ DB_NAME=blog_app
 ### Run Client
 
 --bash--
+
 cd Client
 npm install
 npm run dev
@@ -132,6 +140,7 @@ npm run dev
 ### Run Server
 
 --bash--
+
 cd Server
 npm install
 node index.js
@@ -139,6 +148,7 @@ node index.js
 ---
 
 ## 📁 Project Structure
+
 bookstore-management/
 ├── Client/        # Frontend (React)
 ├── Server/        # Backend (Node.js)
@@ -164,6 +174,7 @@ SELECT * FROM wishlist;
 
 ## 🔒 Security Note
 **sql**
+
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
 FLUSH PRIVILEGES;
 
