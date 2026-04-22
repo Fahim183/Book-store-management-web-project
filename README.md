@@ -133,7 +133,9 @@ DB_NAME=blog_app
 --bash--
 
 cd Client
+
 npm install
+
 npm run dev
 
 
@@ -142,7 +144,9 @@ npm run dev
 --bash--
 
 cd Server
+
 npm install
+
 node index.js
 
 ---
