@@ -154,9 +154,13 @@ node index.js
 ## 📁 Project Structure
 
 bookstore-management/
+
 ├── Client/        # Frontend (React)
+
 ├── Server/        # Backend (Node.js)
+
 ├── database/      # SQL setup
+
 └── README.md
 
 ---
@@ -180,6 +184,7 @@ SELECT * FROM wishlist;
 **sql**
 
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+
 FLUSH PRIVILEGES;
 
 
@@ -190,12 +195,6 @@ FLUSH PRIVILEGES;
 2. Create a new branch
 3. Commit your changes
 4. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
 
 ---
 
